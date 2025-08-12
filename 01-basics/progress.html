@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="w-full max-w-3xl px-4 py-6 bg-white rounded-lg shadow-md">
+        <div class="text-center mb-8 text-gray-800">
+            <p class="text mb-4 ml-4">This tracker shows your progress through different stages:</p>
+            <ul class="list-disc list-inside text-left text-gray-600">
+                <li><strong class="text-green-500">Completed:</strong> Finished steps</li>
+                <li><strong class="text-yellow-500">Current:</strong> The active step</li>
+                <li><strong class="text-gray-300">Upcoming:</strong> Future steps</li>
+            </ul>
+        </div>
+        <div class="relative flex items-center">
+            <div class="absolute inset-0 flex items-center pointer-events-none">
+                <div class="flex-1 h-1 bg-green-500"></div>
+                <div class="flex-1 h-1 bg-yellow-400"></div>
+                <div class="flex-1 h-1 bg-gray-300"></div>
+                <div class="flex-1 h-1 bg-gray-300"></div>
+            </div>
+            <!-- Steps -->
+            <div class="flex-1 text-center relative z-10">
+                <div class="w-12 h-12 rounded-full bg-green-500 
+                     text-white flex items-center justify-center 
+                     mx-auto mb-2 text-2xl">
+
+                </div>
+                <div class="text-sm">Step 1</div>
+            </div>
+            <div class="flex-1 text-center relative z-10">
+                <div class="w-12 h-12 rounded-full bg-yellow-500 
+                     text-white flex items-center justify-center 
+                     mx-auto mb-2 text-2xl">
+
+                </div>
+                <div class="text-sm">Step 2</div>
+            </div>
+            <div class="flex-1 text-center relative z-10">
+                <div class="w-12 h-12 rounded-full bg-gray-200 
+                     text-white flex items-center justify-center 
+                     mx-auto mb-2 text-2xl">
+
+                </div>
+                <div class="text-sm">Step 3</div>
+            </div>
+            <div class="flex-1 text-center relative z-10">
+                <div class="w-12 h-12 rounded-full bg-gray-200 
+                     text-white flex items-center justify-center 
+                     mx-auto mb-3 text-2xl">
+
+                </div>
+                <div class="text-sm">Step 4</div>
+            </div>
+            <div class="absolute right-0 top-1/2 w-1/4 h-px bg-gray-300"></div>
+        </div>
+    </div>
+</body>
+
+</html>
