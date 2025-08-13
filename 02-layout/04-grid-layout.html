@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6 space-y-8">
+    <!-- 1. Basic Grid Columns -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">1. Basic Grid Columns</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-100 p-4">1</div>
+            <div class="bg-blue-200 p-4">2</div>
+            <div class="bg-blue-300 p-4">3</div>
+        </div>
+    </div>
+
+    <!-- 2. Responsive Grid -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">2. Responsive Grid</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-purple-100 p-4">1</div>
+            <div class="bg-purple-200 p-4">2</div>
+            <div class="bg-purple-300 p-4">3</div>
+            <div class="bg-purple-400 p-4">4</div>
+        </div>
+    </div>
+
+    <!-- 3. Spanning Columns/Rows -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">3. Spanning Columns/Rows</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-span-2 bg-green-100 p-4">col-span-2</div>
+            <div class="bg-green-200 p-4">normal</div>
+            <div class="bg-green-300 p-4">normal</div>
+            <div class="row-span-2 bg-green-400 p-4">row-span-2</div>
+            <div class="bg-green-500 p-4">normal</div>
+        </div>
+    </div>
+</body>
+
+</html>

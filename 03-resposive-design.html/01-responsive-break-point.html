@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+    <h1 class="text-2xl font-bold mb-6">Responsive Breakpoints</h1>
+
+    <!-- Breakpoint demonstration -->
+    <div class="space-y-4">
+        <div class="bg-blue-100 p-4 text-center">
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl">
+                This text grows at each breakpoint
+            </p>
+        </div>
+
+        <!-- Breakpoint visibility -->
+        <div class="bg-gray-100 p-4">
+            <p class="text-center">
+                Current breakpoint:
+                <span class="block sm:hidden text-red-500">XS (default)</span>
+                <span class="hidden sm:block md:hidden text-blue-500">SM (≥640px)</span>
+                <span class="hidden md:block lg:hidden text-green-500">MD (≥768px)</span>
+                <span class="hidden lg:block xl:hidden text-purple-500">LG (≥1024px)</span>
+                <span class="hidden xl:block 2xl:hidden text-orange-500">XL (≥1280px)</span>
+                <span class="hidden 2xl:block text-pink-500">2XL (≥1536px)</span>
+            </p>
+        </div>
+
+        <!-- Breakpoint grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div class="bg-green-100 p-4">1</div>
+            <div class="bg-green-200 p-4">2</div>
+            <div class="bg-green-300 p-4">3</div>
+            <div class="bg-green-400 p-4">4</div>
+            <div class="bg-green-500 p-4">5</div>
+        </div>
+    </div>
+</body>
+
+</html>

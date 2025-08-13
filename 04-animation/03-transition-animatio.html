@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-8">
+    <h1 class="text-2xl font-bold mb-6">Transition Effects</h1>
+
+    <!-- Basic Transition -->
+    <div class="mb-8">
+        <button class="px-6 py-3 bg-blue-500 text-white rounded-lg transition hover:bg-blue-600">
+            Hover Transition
+        </button>
+        <p class="mt-2 text-gray-600">Color transition on hover</p>
+    </div>
+
+    <!-- Scale Transition -->
+    <div class="mb-8">
+        <button class="px-6 py-3 bg-green-500 text-white rounded-lg transition-transform hover:scale-105">
+            Scale on Hover
+        </button>
+        <p class="mt-2 text-gray-600">Grows slightly on hover</p>
+    </div>
+
+    <!-- Combined Transitions -->
+    <div>
+        <button
+            class="px-6 py-3 bg-purple-500 text-white rounded-lg transition-all hover:bg-purple-600 hover:scale-105 hover:shadow-lg">
+            Combined Effects
+        </button>
+        <p class="mt-2 text-gray-600">Color, scale and shadow transition</p>
+    </div>
+</body>
+
+</html>

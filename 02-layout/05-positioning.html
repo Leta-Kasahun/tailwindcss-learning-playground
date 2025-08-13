@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .position-container {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body class="p-6 space-y-8">
+    <!-- 1. Relative + Absolute -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">1. Relative + Absolute</h2>
+        <div class="relative position-container bg-gray-100">
+            <div class="absolute top-4 left-4 bg-blue-400 p-4">top-4 left-4</div>
+            <div class="absolute bottom-4 right-4 bg-blue-500 p-4">bottom-4 right-4</div>
+        </div>
+    </div>
+
+    <!-- 2. Fixed Header -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">2. Fixed Header</h2>
+        <div class="fixed top-0 left-0 right-0 bg-red-500 text-white p-4 z-10">
+            Fixed Header (scroll down)
+        </div>
+        <div class="mt-16 h-screen"></div>
+    </div>
+
+    <!-- 3. Sticky Element -->
+    <div class="h-64 overflow-y-auto">
+        <h2 class="text-xl font-bold mb-4">3. Sticky Element</h2>
+        <div class="sticky top-0 bg-green-500 text-white p-4">
+            Sticky Header (scroll within container)
+        </div>
+        <div class="h-96"></div>
+    </div>
+</body>
+
+</html>

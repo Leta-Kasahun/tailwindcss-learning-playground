@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Essentials: Colors & Typography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6 font-sans bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">Tailwind CSS Essentials</h1>
+
+        <!-- Colors Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6 pb-2 border-b">Common Colors</h2>
+
+            <!-- Gray Scale (most used) -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Gray Scale</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+                    <div class="bg-gray-100 p-4 text-center text-gray-800">100</div>
+                    <div class="bg-gray-200 p-4 text-center text-gray-800">200</div>
+                    <div class="bg-gray-300 p-4 text-center text-gray-800">300</div>
+                    <div class="bg-gray-400 p-4 text-center text-white">400</div>
+                    <div class="bg-gray-500 p-4 text-center text-white">500</div>
+                    <div class="bg-gray-600 p-4 text-center text-white">600</div>
+                    <div class="bg-gray-700 p-4 text-center text-white">700</div>
+                    <div class="bg-gray-800 p-4 text-center text-white">800</div>
+                    <div class="bg-gray-900 p-4 text-center text-white">900</div>
+                </div>
+            </div>
+
+            <!-- Primary Colors -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Primary Colors</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <!-- Blue -->
+                    <div class="bg-blue-500 p-4 text-center text-white">Blue 500</div>
+                    <div class="bg-blue-600 p-4 text-center text-white">Blue 600</div>
+                    <div class="bg-blue-700 p-4 text-center text-white">Blue 700</div>
+
+                    <!-- Indigo -->
+                    <div class="bg-indigo-500 p-4 text-center text-white">Indigo 500</div>
+                    <div class="bg-indigo-600 p-4 text-center text-white">Indigo 600</div>
+                    <div class="bg-indigo-700 p-4 text-center text-white">Indigo 700</div>
+                </div>
+            </div>
+
+            <!-- State Colors -->
+            <div>
+                <h3 class="text-lg font-medium text-gray-600 mb-4">State Colors</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <!-- Green/Success -->
+                    <div class="bg-green-500 p-4 text-center text-white">Green 500</div>
+                    <div class="bg-green-600 p-4 text-center text-white">Green 600</div>
+
+                    <!-- Red/Error -->
+                    <div class="bg-red-500 p-4 text-center text-white">Red 500</div>
+                    <div class="bg-red-600 p-4 text-center text-white">Red 600</div>
+
+                    <!-- Yellow/Warning -->
+                    <div class="bg-yellow-400 p-4 text-center text-gray-800">Yellow 400</div>
+                    <div class="bg-yellow-500 p-4 text-center text-gray-800">Yellow 500</div>
+
+                    <!-- Purple -->
+                    <div class="bg-purple-500 p-4 text-center text-white">Purple 500</div>
+                    <div class="bg-purple-600 p-4 text-center text-white">Purple 600</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6 pb-2 border-b">Typography</h2>
+
+            <!-- Font Family -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Font Family</h3>
+                <div class="space-y-4">
+                    <p class="font-sans">font-sans (System UI)</p>
+                    <p class="font-serif">font-serif (Serif)</p>
+                    <p class="font-mono">font-mono (Monospace)</p>
+                </div>
+            </div>
+
+            <!-- Font Size -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Font Size</h3>
+                <div class="space-y-4">
+                    <p class="text-xs">text-xs (12px) - Captions</p>
+                    <p class="text-sm">text-sm (14px) - Small text</p>
+                    <p class="text-base">text-base (16px) - Body text</p>
+                    <p class="text-lg">text-lg (18px) - Lead text</p>
+                    <p class="text-xl">text-xl (20px) - Subheadings</p>
+                    <p class="text-2xl">text-2xl (24px) - Headings</p>
+                    <p class="text-3xl">text-3xl (30px) - Main headings</p>
+                </div>
+            </div>
+
+            <!-- Font Weight -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Font Weight</h3>
+                <div class="space-y-2">
+                    <p class="font-light">font-light (300)</p>
+                    <p class="font-normal">font-normal (400)</p>
+                    <p class="font-medium">font-medium (500)</p>
+                    <p class="font-semibold">font-semibold (600)</p>
+                    <p class="font-bold">font-bold (700)</p>
+                </div>
+            </div>
+
+            <!-- Text Alignment -->
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Text Alignment</h3>
+                <div class="space-y-4 border p-4">
+                    <p class="text-left">text-left (Left aligned)</p>
+                    <p class="text-center">text-center (Center aligned)</p>
+                    <p class="text-right">text-right (Right aligned)</p>
+                </div>
+            </div>
+
+            <!-- Text Colors -->
+            <div>
+                <h3 class="text-lg font-medium text-gray-600 mb-4">Text Colors</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <p class="text-gray-500">text-gray-500</p>
+                    <p class="text-gray-700">text-gray-700</p>
+                    <p class="text-gray-900">text-gray-900</p>
+                    <p class="text-blue-600">text-blue-600</p>
+                    <p class="text-red-600">text-red-600</p>
+                    <p class="text-green-600">text-green-600</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

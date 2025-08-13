@@ -1,16 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwindcss-spacing</title>
+    <title>Essential Tailwind CSS Spacing</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-   <h1 class="p-6 m-10 bg-blue-700">spacing practise in tailwindcss padding padding 6 and margin 10 from all side</h1> 
-   <h2 class="mb-8 mr-10 px-8 py-10 bg-green-400 ml-10 mt-20  ">this implimented with margin top 20 mrgin botton 6 mr left mb-10 margin right 10px px left and right 8px py top and buttom 10px</h2>
 
-   <div class="space-y-6 m-10 p-6 bg-yellow-400"><h1>top text spaced from the botton 6</h1><h1> midle  texts speced fot the top</h1><h1>bottom texts</h1></div>
-  
+<body class="p-4 font-sans">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-2xl font-bold mb-6">Essential Tailwind CSS Spacing</h1>
+
+        <!-- Padding -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 border-b pb-2">Padding Utilities</h2>
+
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-medium mb-2">All sides (p-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border p-2">p-2 (0.5rem/8px)</div>
+                        <div class="border p-4">p-4 (1rem/16px)</div>
+                        <div class="border p-6">p-6 (1.5rem/24px)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Horizontal (px-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border px-2">px-2</div>
+                        <div class="border px-4">px-4</div>
+                        <div class="border px-6">px-6</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Vertical (py-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border py-2">py-2</div>
+                        <div class="border py-4">py-4</div>
+                        <div class="border py-6">py-6</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Individual sides</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border pt-4">pt-4 (top)</div>
+                        <div class="border pr-4">pr-4 (right)</div>
+                        <div class="border pb-4">pb-4 (bottom)</div>
+                        <div class="border pl-4">pl-4 (left)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Margin -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 border-b pb-2">Margin Utilities</h2>
+
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-medium mb-2">All sides (m-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border m-2 bg-gray-100">m-2</div>
+                        <div class="border m-4 bg-gray-100">m-4</div>
+                        <div class="border m-6 bg-gray-100">m-6</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Horizontal (mx-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border mx-2 bg-gray-100">mx-2</div>
+                        <div class="border mx-4 bg-gray-100">mx-4</div>
+                        <div class="border mx-6 bg-gray-100">mx-6</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Vertical (my-{size})</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="border my-2 bg-gray-100">my-2</div>
+                        <div class="border my-4 bg-gray-100">my-4</div>
+                        <div class="border my-6 bg-gray-100">my-6</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Auto margins</h3>
+                    <div class="border p-4">
+                        <div class="mx-auto w-1/2 bg-gray-200 p-2 text-center">mx-auto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Space Between -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 border-b pb-2">Space Between</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-medium mb-2">Horizontal (space-x-{size})</h3>
+                    <div class="flex space-x-4 border p-4">
+                        <div class="bg-gray-200 p-2">Item 1</div>
+                        <div class="bg-gray-200 p-2">Item 2</div>
+                        <div class="bg-gray-200 p-2">Item 3</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium mb-2">Vertical (space-y-{size})</h3>
+                    <div class="space-y-4 border p-4">
+                        <div class="bg-gray-200 p-2">Item 1</div>
+                        <div class="bg-gray-200 p-2">Item 2</div>
+                        <div class="bg-gray-200 p-2">Item 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gap -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 border-b pb-2">Gap Utilities</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-medium mb-2">Grid gap (gap-{size})</h3>
+                    <div class="grid grid-cols-3 gap-4 border p-4">
+                        <div class="bg-gray-200 p-2">Item</div>
+                        <div class="bg-gray-200 p-2">Item</div>
+                        <div class="bg-gray-200 p-2">Item</div>
+                        <div class="bg-gray-200 p-2">Item</div>
+                        <div class="bg-gray-200 p-2">Item</div>
+                        <div class="bg-gray-200 p-2">Item</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
